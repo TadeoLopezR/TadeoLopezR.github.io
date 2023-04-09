@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/44a832fc77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Tadeo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#proyecto" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.png" alt="Foto de perfil">
+            </div>
+            <h1>TADEO LOPEZ REPETTO</h1>
+            <h2>Desarrollado Web</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/tadeo-lopez-repetto-bbb9b4263/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#https://github.com/TadeoLopezR" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Tadeo Lopez Repetto.</span> Soy un desarrollador web que utilizo las tecnologías más recientes. Durante el proceso de desarrollo, me adhiero a las soluciones que proporcionen la máxima experiencia del usuario.Ademas me adapto rápido a las tecnologías que se vayan necesitando en el desarrollo.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            21-12-1998
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            lrstadeo@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Localidad</strong>
+                            Buenos Aires, Argentina
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Aptitudes -->
+                <div class="col">
+                    <h3>Fortalezas</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-comments"></i>
+                            <span>Comunicador</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-stopwatch"></i>
+                            <span>Puntual</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>Creativo</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book-atlas"></i>
+                            <span>Dedicado</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                
+                <div class="col">
+                    <h3>Habilidades Actuales</h3>
+                        <div class="skill">
+                            <span>HTML</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JAVASCRIPT</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JEST</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>81%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>CYPRESS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>   
+    </section>
+    <!-- SECCION PROYECTO -->
+    <section id="proyecto" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/carroDeCompras" target="_blank">
+                        <img src="img/Carro.png" alt="proyecto carro de compras">
+                        <div class="overlay">
+                            <h3>Carro de Compras</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/APIclima" target="_blank">
+                        <img src="img/Clima.png" alt="Proyecto Clima">
+                        <div class="overlay">
+                            <h3>Buscador de Clima</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/CotizadorDeSeguros" target="_blank">
+                        <img src="img/Cotizador.png" alt="Proyecto Cotizador De Autos">
+                        <div class="overlay">
+                            <h3>Cotizador de Seguros de Autos</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/Veterinaria" target="_blank">
+                        <img src="img/Administracion de Citas.png" alt="Proyecto Administracion De Citas de Veterinaria">
+                        <div class="overlay">
+                            <h3>Veterinaria</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/Administracion" target="_blank">
+                        <img src="img/Gastos.png" alt="Proyecto Gastos Semanales">
+                        <div class="overlay">
+                            <h3>Gastos Semanales</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/Resetas" target="_blank">
+                       <img src="img/Buscador de Recetas.png" alt="Proyecto Buscador de Recetas">
+                        <div class="overlay">
+                            <h3>Buscador de Recetas</h3>
+                        </div> 
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/Buscador" target="_blank">
+                        <img src="img/Buscador de img.png" alt="Proyecto Buscador de img">
+                        <div class="overlay">
+                            <h3>Buscador de Imagenes</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/Restaurante-" target="_blank">
+                        <img src="img/Calculador.png" alt="Proyecto Calculador de Consumo y Propinas ">
+                        <div class="overlay">
+                            <h3>Calculador de Consumo y Propinas</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/Criptomonedas" target="_blank">
+                        <img src="img/Criptomonedas.png" alt="Proyecto Cotizador de Criptomonedas">
+                        <div class="overlay">
+                            <h3>Cotizador de Criptomonedas</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/TadeoLopezR/Administrador" target="_blank">
+                        <img src="img/Administrador.png" alt="Proyecto Administrador de Clientes">
+                        <div class="overlay">
+                            <h3>Administrador de Clientes</h3>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="contacto" id="contacto">
+            <h2>CONTACTO</h2>
+                <div class="col">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: lrstadeo@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/tadeo-lopez-repetto-bbb9b4263/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#https://github.com/TadeoLopezR" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
